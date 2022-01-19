@@ -128,7 +128,7 @@ stage('Deploy') {
                 credential: '1',  
                 limit: "${hostLimit}",
                 extraVars: '''---
-ARTIFACT_URL:  "${artifactUrl}"
+ARTIFACT_URL: "${artifactUrl}"
 APP_NAME: "${pom.artifactId}" 
 '''
         )
